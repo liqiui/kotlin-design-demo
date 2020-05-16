@@ -28,6 +28,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="@dimen/spacing_normal"
                     app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/add_gdg"
                     android:layout_marginTop="@dimen/spacing_normal"/>
 
             <ImageView
@@ -42,10 +43,12 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextName"
+                    android:contentDescription="@string/stage_image_description"
                     android:scaleType="centerCrop"/>
 
             <EditText
                     android:id="@+id/EditTextName"
+                    android:hint="@string/your_name_label"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_marginTop="8dp"
@@ -73,6 +76,7 @@
                     android:singleLine="true"/>
             <EditText
                     android:id="@+id/EditTextCity"
+                    android:hint="@string/city_label"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_marginTop="4dp"
@@ -86,6 +90,7 @@
                     android:singleLine="true"/>
             <EditText
                     android:id="@+id/EditTextCountry"
+                    android:hint="@string/country_label"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     app:layout_constraintTop_toBottomOf="@+id/EditTextCity"
@@ -99,6 +104,7 @@
                     android:singleLine="true"/>
             <EditText
                     android:id="@+id/EditTextRegion"
+                    android:hint="@string/region_label"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_marginTop="4dp"
@@ -127,6 +133,7 @@
 
             <TextView
                     android:id="@+id/labelTextWhy"
+                    android:contentDescription="@string/motivation"
                     android:text="@string/motivation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -139,6 +146,7 @@
 
             <EditText
                     android:id="@+id/EditTextWhy"
+                    android:hint="@string/enter_motivation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -156,6 +164,7 @@
 
             <Button
                     android:id="@+id/button"
+                    android:contentDescription="@string/submit_button_description"
                     android:text="Ok"
                     android:layout_width="40dp"
                     android:layout_height="24dp"
